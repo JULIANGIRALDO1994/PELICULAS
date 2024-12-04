@@ -1,0 +1,84 @@
+/* Estilos generales */
+.app-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(45deg, #430e10, #0f0101);
+  min-height: 100vh;
+  color: #272626;
+}
+.app-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.movieList {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas salten a la siguiente línea */
+  justify-content: center; /* Centra horizontalmente */
+  gap: 250px; /* Espacio entre tarjetas */
+  width: 100%;
+}
+.movie-card {
+  width: 200px; /* 3 columnas con espacio para el gap */
+  max-width: 300px; /* Tamaño máximo para no estirarse demasiado */
+  box-sizing: border-box; /* Asegura que los márgenes no afecten el tamaño */
+}
+
+/* Efecto de zoom y sombra al pasar el ratón */
+.movie-card:hover {
+  transform: translateY(-10px); /* Mueve la tarjeta hacia arriba */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+/* Estilo de la imagen de la película */
+.movie-image {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: 300px; /* Altura fija */
+  object-fit: cover; /* Mantiene la relación de aspecto y recorta la imagen si es necesario */
+  border-bottom: 3px solid #f1f1f1; /* Línea separadora entre la imagen y el texto */
+  transition: transform 0.3s ease; /* Transición para el efecto hover */
+}
+
+/* Efecto de zoom en la imagen */
+.movie-card:hover .movie-image {
+  transform: scale(1.1); /* Escala la imagen al pasar el ratón */
+}
+
+/* Estilos para el título y género */
+.movie-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #f1ecec;
+  text-align: center;
+}
+
+/* Estilo para el texto de género */
+.movie-card p {
+  font-size: 1rem;
+  color: #f8f4f4;
+  text-align: center;
+}
+#root{
+height: 100%;
+width: 100%;
+}
+.app-footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.app-footer a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.app-footer a:hover {
+  text-decoration: underline;
+}
