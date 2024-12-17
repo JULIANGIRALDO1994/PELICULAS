@@ -6,66 +6,66 @@ const App: React.FC = () => {
   const [movies] = useState([
     {
       id: 1,
-      title: "Jurassic World",
-      genre: "Ciencia Ficción",
-      image: "Jurassic World .jpg",
+      title: "Conjunto rosa mujer",
+      descripcion: "Conjunto rosa para dama $145.000",
+      image: "Conjunto mujer.jpg",
     },
     {
       id: 2,
-      title: "Kun Fu Panda 4",
-      genre: "Anime",
-      image: "kung-fu-panda-4-.jpg",
+      title: "Guantes",
+      descripcion: "Guantes GYM Golty $50.000",
+      image: "YTR.jpg",
     },
     {
       id: 3,
       title: "Venon 3 ",
-      genre: "Ciencia ficción",
-      image: "venom-3-.jpg",
+      descripcion: "Guantes arquero Golty $200.000",
+      image: "aaa.jpg",
     },
     {
       id: 4,
-      title: "Bad Boys ",
-      genre: "Action",
-      image: "Bad Boys.jpg",
+      title: "Camisa",
+      descripcion: "Camias America de cali $265.000",
+      image: "camisaamerica.jpg",
     },
     {
       id: 5,
-      title: "Codigo Traje Rojo",
-      genre: "Ciencia Ficción",
-      image: "codigo traje rojo.jpg",
+      title: "Balon",
+      descripcion: "Balon futbol 8 Venon $70.000",
+      image: "balonvenon.jpg",
     },
     {
       id: 6,
-      title: "Furiosa",
-      genre: "Action",
-      image: "furiosa.jpg",
+      title: "Camisa",
+      descripcion: "Casmisa Edicion F1 $500.000",
+      image: "F1camisa.jpg",
     },
     {
       id: 7,
-      title: "Planeta De Los Simios ",
-      genre: "Ciencia ficción",
-      image: "planeta de los simios.jpg",
+      title: "Camisa",
+      descripcion: "Camisa manchester city $165.000",
+      image: "city.jpg",
     },
     {
       id: 8,
-      title: "Kraven El Cazador",
-      genre: "Action",
-      image: "kraven el cazador.jpg",
+      title: "Tenis",
+      descripcion: "Tenis hombre blancos $400.000",
+      image: "tenis.jpg",
     },
     {
       id: 9,
-      title: "Gladiator",
-      genre: "Action",
-      image: "gladiator2.jpg",
+      title: "Balon",
+      descripcion: "Balon futbol Golty $150.000",
+      image: "balon.jpg",
     },
   ]);
 
   return (
     <div className="app-container">
-      <h1 className="app-title">🎬 Movie List 🎬</h1>
+      <h1 className="app-title">TIENDA SPORT JG</h1>
       <MovieList movies={movies} />
       <footer className="app-footer">
-        <p>© 2024 MovieList. Todos los derechos reservados.</p>
+        <p>© 2024 tienda deportiva a la moda . Todos los derechos reservados.</p>
         <p>
           Desarrollado por{" Julian Giraldo"}
         </p>

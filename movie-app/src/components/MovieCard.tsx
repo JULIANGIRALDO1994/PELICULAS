@@ -13,7 +13,7 @@ const imageSrc = new URL(`../assets/img/${movie.image}`, import.meta.url).href;
 const showDetails = () => {
     Swal.fire({
     title: movie.title,
-    text: `Genre: ${movie.genre}`,
+    text: `Descripcion: ${movie.descripcion}`,
       imageUrl: imageSrc, // Usamos la imagen en SweetAlert2
     imageWidth: 300,
     imageAlt: `${movie.title} Poster`,
@@ -25,7 +25,7 @@ return (
     <div className="movie-card" onClick={showDetails}>
     <img src={imageSrc} alt={movie.title} className="movie-image" />
     <h3>{movie.title}</h3>
-    <p>{movie.genre}</p>
+    <p>{movie.descripcion}</p>
     </div>
 );
 };
